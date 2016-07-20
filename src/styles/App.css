@@ -1,0 +1,49 @@
+body {
+  color: #000;
+  background: #fff;
+}
+
+
+.msg-field {
+  height: 300px;
+  overflow-y: scroll;
+  border: 2px solid #000;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 12px 12px 80px 12px;
+  resize: vertical;
+}
+
+.loading-circle {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  border: 1px dashed #000;
+  border-width: 1px 2px 3px 3px;
+  border-radius: 50%;
+  animation-name: rotate;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.message {
+  border-bottom: 1px solid #ccc;
+}
+
+.message--error {
+  color: red;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
